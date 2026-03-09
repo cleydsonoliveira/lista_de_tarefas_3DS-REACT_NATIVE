@@ -1,3 +1,4 @@
+import { Link } from 'expo-router';
 import { KeyRound, Mail } from 'lucide-react-native';
 import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
@@ -34,10 +35,12 @@ export default function app() {
           </View>
         </View>
       </View>
-      <View>
+      <View style={styles.viewBtn}>
         <View>
           <TouchableOpacity style={styles.btnEnviar}>
+            <Link href="/tela2" asChild>
             <Text style={styles.textEntrar}>Entrar</Text>
+            </Link>
           </TouchableOpacity>
         </View>
       </View>
@@ -60,8 +63,9 @@ const styles = StyleSheet.create({
     borderRadius: 20
   },
   textBemVindo: {
-    fontSize: 23,
-    fontWeight: 'bold'
+    fontSize: 30,
+    fontWeight: 'bold',
+     paddingTop: 20
   },
   viewForm: {
     flex: 1,
@@ -81,9 +85,19 @@ const styles = StyleSheet.create({
   },
   textEntrar:{
     fontSize: 22,
+    fontWeight: 'bold',
     color: '#fff'
   },
   btnEnviar:{
-    backgroundColor: '#878af6'
+    backgroundColor: '#878af6',
+    paddingVertical: 10,
+    paddingHorizontal: 70,
+    borderRadius: 35
+},
+  viewBtn:{
+    flex: 1, 
+    marginTop: -250,
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 })

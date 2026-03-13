@@ -13,12 +13,12 @@ export default function RootLayout() {
       />
       <Tabs.Screen name='tela2' 
       options={{
-        tabBarIcon: () => <House />
+        tabBarIcon: ({size}) => <House size={25}/>
       }}
       />
       <Tabs.Screen name='teste' 
       options={{
-        tabBarIcon: () => <User />
+        tabBarIcon: (size) => <User size={25}/>
       }}
       />
 

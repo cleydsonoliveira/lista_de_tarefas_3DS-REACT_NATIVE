@@ -1,11 +1,17 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function app() {
   return (
     <View>
-      <View>View1</View>
-      <View>View2</View>
-      <View>View3</View>
+      <View>
+        <Text>View1</Text>
+      </View>
+      <View>
+        <Text>View1</Text>
+      </View>
+      <View>
+        <Text>View1</Text>
+      </View>
     </View>
   );
 }

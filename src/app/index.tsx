@@ -29,6 +29,8 @@ export default function app() {
               <TextInput
                 style={styles.input}
                 placeholder=''
+                secureTextEntry={true}
+                textContentType='password'
               />
               <KeyRound style={styles.icone} />
             </View>
